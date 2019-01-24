@@ -159,6 +159,42 @@ for file in setsFiles:
             )
         )
     )
+columns=genXml.Path().appendChild(
+    BEXml.CommonNode(label='columns')
+)
+columns.appendChildren(nodes=(
+        BEXml.CommonNode(
+            label='column',
+            attributes=[('title','total')],
+            text='CPU time for CEGAR algorithm'
+        ),
+        BEXml.CommonNode(
+            label='column',
+            attributes=[('title','ref time')],
+            text='CPU time for refinements'
+        ),
+        BEXml.CommonNode(
+            label='column',
+            attributes=[('title','CPA time')],
+            text='CPU time for CPA algorithm'
+        ),
+        BEXml.CommonNode(
+            label='column',
+            attributes=[('title','refinements')],
+            text='Refinement times'
+        ),
+        BEXml.CommonNode(
+            label='column',
+            attributes=[('title','Heap Size')],
+            text='Allocated heap memory'
+        ),
+        BEXml.CommonNode(
+            label='column',
+            attributes=[('title','inv hits')],
+            text='CPU time for CEGAR algorithm'
+        )
+    )
+)
 
 genXml.fileOutput('out.xml')
 

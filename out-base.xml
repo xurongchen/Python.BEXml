@@ -41676,4 +41676,12 @@
 			<include>${benchmark_path_abs}/programs/drivers--video--matrox--i2c-matroxfb.ko/012.316b4d6.68_1.cil_safe.i</include>
 		</sourcefiles>
 	</rundefinition>
+	<columns>
+		<column title="total">CPU time for CEGAR algorithm</column>
+		<column title="ref time">CPU time for refinements</column>
+		<column title="CPA time">CPU time for CPA algorithm</column>
+		<column title="refinements">Refinement times</column>
+		<column title="Heap Size">Allocated heap memory</column>
+		<column title="inv hits">CPU time for CEGAR algorithm</column>
+	</columns>
 </benchmark>
